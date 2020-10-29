@@ -1,0 +1,29 @@
+{
+  "name": "projectlaisiangthou-api",
+  "version": "1.0.0",
+  "description": "Backend api for Project Laisiangthou build with node.js and express",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "create-docs": "node createDocs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biaksangmunsong/projectlaisiangthou-api.git"
+  },
+  "keywords": [
+    "Bible",
+    "Laisiangthou"
+  ],
+  "author": "Biaksang Munsong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biaksangmunsong/projectlaisiangthou-api/issues"
+  },
+  "homepage": "https://github.com/biaksangmunsong/projectlaisiangthou-api#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.11"
+  }
+}
