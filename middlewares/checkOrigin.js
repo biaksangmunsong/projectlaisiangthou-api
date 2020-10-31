@@ -1,14 +1,14 @@
 module.exports = (req, res, next) => {
 
-    const host = req.headers.host
-    if (!host){
+    const requestOrigin = req.headers.origin
+    if (!requestOrigin){
         return res.end()
     }
     
     const allowedOrigins = process.env.ALLOWED_ORIGINS.split(",")
     let allowed = false
     for (let i = 0; i < allowedOrigins.length; i++){
-        if (host === allowedOrigins[i]){
+        if (requestOrigin === allowedOrigins[i]){
             allowed = true
             break
         }
